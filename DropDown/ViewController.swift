@@ -10,16 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var city: [UIButton]!
+    
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func handleSelection(_ sender: UIButton) {
+        city.forEach {(button) in
+            button.isHidden = !button.isHidden
+            
+        }
+    }
+    
+    
+    @IBAction func cityTapped(_ sender: UIButton) {
+        guard let title = sender.currentTitle else {
+            return
+        }
+        }
+        
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
