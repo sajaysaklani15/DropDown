@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //
+        print("sanay")
     }
 
     @IBAction func handleSelection(_ sender: UIButton) {
